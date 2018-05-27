@@ -79,7 +79,7 @@ header a:hover{
 }
 
 section .container {
-  width: 90%;
+  width: 95%;
   margin: auto;
   margin-top: 10px;
   display: grid;
@@ -144,15 +144,47 @@ section .container {
 #leftVertBar .panel p{
   text-align: center;
 }
-.panel p img {
+
+.hayashi {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   border: 2px solid #D4AF37;
   transition: 0.3s ease-in-out;
 }
-.panel p img:hover {
+.hayashi:hover {
   transform: scale(1.1);
+}
+
+.socialLink {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+#facebookLink {
+  background-image: url('../images/facebook.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 33%;
+}
+
+#instagramLink {
+  background-image: url('../images/instagram.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 33%;
+}
+
+#twitterLink {
+  background-image: url('../images/twitter.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 33%;
 }
 
 #rightVertBar {
