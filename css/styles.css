@@ -1,0 +1,249 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+
+header .container{
+  width:90%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+/* Header **/
+header{
+  background: #191970;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#FFDF00 5px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+  transition: 0.8 ease-in-out;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+  font-family: 'Quicksand';
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+  font-family: 'Raleway';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 180%;
+}
+
+.yellowText {
+  color: #FFDF00;
+}
+
+.smallText {
+  font-size: 12px;
+}
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#FFDF00;
+}
+
+header a:hover{
+  color:#FFDF00;
+  border-bottom: 2px solid #FFDF00
+}
+
+section .container {
+  width: 98%;
+  margin: auto;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1.5fr 4fr;
+  grid-column-gap: 1em;
+}
+
+#leftVertBar {
+}
+
+.accordion {
+    background-color: #191970;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-family: 'Raleway';
+    letter-spacing: 2px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.accordion:first-of-type {
+  border-radius: 10px 10px 0 0;
+}
+
+.accordion:last-of-type {
+  border-radius: 0 0 10px 10px;
+}
+
+.accordion:hover {
+    background-color: #D4AF37;
+}
+.active {
+    background-color: #191970;
+}
+
+.accordion:after {
+    content: "\2212";
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: '\002B';
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #eee;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    overflow-y: auto;
+}
+
+#leftVertBar .panel p{
+  text-align: center;
+}
+.panel p img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #D4AF37;
+  transition: 0.3s ease-in-out;
+}
+.panel p img:hover {
+  transform: scale(1.1);
+}
+
+#rightVertBar {
+  display: grid;
+  background: #eee;
+  border-radius: 10px 10px 0 0;
+  height: 1px;
+}
+
+.rightBoxItem {
+}
+
+#imageGallery {
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#imageGallery img {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px 10px 0 0;
+}
+
+#imageText {
+  background-color: white;
+  padding: 10px 20px;
+}
+
+.newsAccordion {
+    background: #eee;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-family: 'Raleway';
+    letter-spacing: 2px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.newsAccordion:after {
+    content: "Show less";
+    color: black;
+    font-size: 12px;
+    float: right;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.newsActive:after {
+    content: 'Show more';
+}
+ .panel {
+    margin-bottom: 10px;
+}
+.newsAccordion:first-of-type {
+  border-radius: 10px 10px 0 0;
+}
+
+.newsAccordion:last-of-type {
+  border-radius: 0 0 10px 10px;
+}
+
+.newsAccordion:hover {
+    background-color: #D4AF37;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px){
+  header #branding, header nav, header nav li{
+    float:none;
+    display: block;
+    margin-bottom: 20px;
+    text-align:center;
+    width:100%;
+  }
