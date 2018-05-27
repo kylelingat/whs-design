@@ -23,6 +23,7 @@ header{
   color:#ffffff;
   padding-top:30px;
   min-height:70px;
+  max-width: 100%;
   border-bottom:#FFDF00 5px solid;
 }
 
@@ -78,11 +79,11 @@ header a:hover{
 }
 
 section .container {
-  width: 98%;
+  width: 90%;
   margin: auto;
   margin-top: 10px;
   display: grid;
-  grid-template-columns: 1.5fr 4fr;
+  grid-template-columns: 30% 70%;
   grid-column-gap: 1em;
 }
 
@@ -155,13 +156,12 @@ section .container {
 }
 
 #rightVertBar {
-  display: grid;
   background: #eee;
   border-radius: 10px 10px 0 0;
-  height: 1px;
 }
 
 .rightBoxItem {
+  width: 100%;
 }
 
 #imageGallery {
@@ -247,3 +247,13 @@ section .container {
     text-align:center;
     width:100%;
   }
+
+  section .container {
+    width: 98%;
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 1em;
+  }
+}
